@@ -3,9 +3,9 @@ package main
 import "fmt"
 
 type user struct {
-	name    string
-	age     uint8
-	address address
+	name string
+	age  uint8
+	address
 }
 
 type address struct {
@@ -26,6 +26,8 @@ func main() {
 	fmt.Println(user2)
 
 	user3 := user{age: 28, address: address{"Rua da paz", 25}}
+	number1 := user3.number
+	fmt.Println(number1)
 	fmt.Println(user3)
 
 }
