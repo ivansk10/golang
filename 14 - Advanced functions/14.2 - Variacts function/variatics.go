@@ -14,7 +14,6 @@ func write(text string, numbers ...int) { //this parameter sequence must be foll
 	for _, value := range numbers {
 		fmt.Println(text, value)
 	}
-	text += 10
 }
 
 func main() {
