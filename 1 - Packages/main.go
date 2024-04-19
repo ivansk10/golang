@@ -8,8 +8,8 @@ import (
 )
 
 func main() {
-	fmt.Println("Escrevendo do arquivo main")
-	auxiliar.Escrever()
+	fmt.Println("Writing of main archive")
+	auxiliar.Write()
 
 	erro := checkmail.ValidateFormat("ivansaad23@gmail.com")
 	erro2 := checkmail.ValidateFormat("123.com")
