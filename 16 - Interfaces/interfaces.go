@@ -13,6 +13,10 @@ func writeArea(f form) {
 	fmt.Printf("Form area is %0.2f\n", f.area())
 }
 
+type circle struct {
+	radius float64
+}
+
 type rectangle struct {
 	height float64
 	width  float64
@@ -24,10 +28,6 @@ func (r rectangle) area() float64 {
 
 func (c circle) area() float64 {
 	return math.Pi * math.Pow(c.radius, 2)
-}
-
-type circle struct {
-	radius float64
 }
 
 func main() {
